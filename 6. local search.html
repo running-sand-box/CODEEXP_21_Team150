@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = 'stylesheet.css' rel = 'stylesheet'>
+        <title>Search</title>
+    </head>
+
+    <main>
+        <header>
+            <div class=banner>
+                <img src='images/crab.png' style='margin-top: 20px; height:80px; width:130px;'>
+            </div>
+        </header><br>
+
+        <div class="topnav">
+            <a href="5. local home.html">HOME</a>
+            <a class="active" href="6. local search.html">SEARCH</a>
+            <a href="7. local upload.html">UPLOAD</a>
+            <a href="8. local profile.html">PROFILE</a>
+            <a href="2. login.html">LOGOUT</a>
+        </div>
+        <br><br>
+
+        <!--search bar-->
+        <input type="text" class="search" onkeyup="myFunction()" placeholder="Search"><br>
+        <div class="sticky">
+            <div class="dropdown">
+                <button class="dropbtn">All categories</button>
+                <div class="dropdown-content">
+                    <a href="#">Asian Delights</a>
+                    <a href="#">Bakery & Confectionary</a>
+                    <a href="#">Beverages</a>
+                    <a href="#">Cafe & Dessert Bar</a>
+                    <a href="#">Chinese Cuisine</a>
+                    <a href="#">Fast Food</a>
+                    <a href="#">Food Kiosk & Light Bites</a>
+                    <a href="#">Halal Options</a>
+                    <a href="#">Indian Cuisine</a>
+                    <a href="#">Italian Cuisine</a>
+                    <a href="#">Japanese Cuisine</a>
+                    <a href="#">Korean Cuisine</a>
+                    <a href="#">Local Delights</a>
+                    <a href="#">Sweets & Delicatessen</a>
+                    <a href="#">Thai Cuisine</a>
+                    <a href="#">Vegetarian Options</a>
+                    <a href="#">Vietnamese Cuisine</a>
+                    <a href="#">Western Cuisine</a>
+                </div>
+            </div>
+        </div>
+        <hr><br>
+
+        <table style='margin:auto'>
+            <tbody>
+                <tr>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href='6.1 local asian sample.html'><img src="images/asian.jpg" class="asianImg" id='catImg'/></a>
+                            <figcaption class="asiantitle">Asian Delights</figcaption>
+                        </figure>
+                    </td>
+                    <td style='text-align: center;'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/bakery and confectionery.jpeg" class="bakeryImg" id='catImg'/></a>
+                            <figcaption class="bakerytitle">Bakery <br>& Confectionary</figcaption>
+                        </figure>
+                    </td>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/beverage.jpg" class="bevImg" id='catImg'/></a>
+                            <figcaption class="bevtitle">Beverages</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/cafe.jpg" class="cafeImg" id='catImg'/></a>
+                            <figcaption class="cafetitle">Cafe<br>& Dessert Bar</figcaption>
+                        </figure>
+                    </td>
+                    <td style='text-align: center;'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/chinese.jpg" class="chineseImg" id='catImg'/></a>
+                            <figcaption class="chinesetitle">Chinese Cuisine</figcaption>
+                        </figure>
+                    </td>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/fast food.jpg" class="ffImg" id='catImg'/></a>
+                            <figcaption class="fftitle">Fast Food</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/light bites.jpg" class="lbImg" id='catImg'/></a>
+                            <figcaption class="lbtitle">Food Kiosk<br>& Light Bites</figcaption>
+                        </figure>
+                    </td>
+                    <td style='text-align: center;'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/halal.jpg" class="halalImg" id='catImg'/></a>
+                            <figcaption class="halaltitle">Halal Options</figcaption>
+                        </figure>
+                    </td>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/indian.jpg" class="indianImg" id='catImg'/></a>
+                            <figcaption class="indiantitle">Indian Cuisine</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/indian.jpg" class="indianImg" id='catImg'/></a>
+                            <figcaption class="italiantitle">Italian Cuisine</figcaption>
+                        </figure>
+                    </td>
+                    <td style='text-align: center;'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/japanese.jpg" class="japImg" id='catImg'/></a>
+                            <figcaption class="japtitle">Japanese Cuisine</figcaption>
+                        </figure>
+                    </td>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/korean.jpg" class="koreanImg" id='catImg'/></a>
+                            <figcaption class="koreantitle">Korean Cuisine</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/local.jpg" class="localImg" id='catImg'/></a>
+                            <figcaption class="localtitle">Local Delights</figcaption>
+                        </figure>
+                    </td>
+                    <td style='text-align: center;'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/delicatessen.jpg" class="deliImg" id='catImg'/></a>
+                            <figcaption class="delititle">Sweets<br>& Delicatessen</figcaption>
+                        </figure>
+                    </td>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/thai.jpg" class="thaiImg" id='catImg'/></a>
+                            <figcaption class="thaititle">Thai Cuisine</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/veg.jfif" class="vegImg" id='catImg'/></a>
+                            <figcaption class="vegtitle">Vegetarian Options</figcaption>
+                        </figure>
+                    </td>
+                    <td style='text-align: center;'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/viet.jpg" class="vietImg" id='catImg'/></a>
+                            <figcaption class="viettitle">Vietnamese Cuisine</figcaption>
+                        </figure>
+                    </td>
+                    <td class='catTd'>
+                        <figure id="catContainer">
+                            <a href="#"><img src="images/west.jpg" class="westImg" id='catImg'/></a>
+                            <figcaption class="westtitle">Western Cuisine</figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</html>

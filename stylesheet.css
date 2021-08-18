@@ -1,0 +1,1047 @@
+/*----------------------------------------- DEFAULT SETTING ----------------------------------------*/
+html{
+    background-color: black;
+    margin:auto auto;
+    overflow: scroll;
+}
+
+/*crab and gif banner*/
+.banner{
+    background-image: url('images/bubbles.gif');
+    display: block;
+    height: 100px;
+    margin-top: -20px;
+    text-align: center;
+}
+
+/*red return arrow*/
+nav.return{
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*all white buttons*/
+.button{
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 20px
+}
+/*white button turns red upon hovering*/
+.button:hover{
+    background-color: red;
+}
+
+/*white header*/
+.label{
+    color: aliceblue;
+    font-weight: bolder;
+}
+/*white text, left alignment*/
+.subtext{
+    font-size: 18px;
+    color: aliceblue;
+    padding-left: 30px;
+}
+/*white text on grey bg*/
+.instructions{
+    font-size: 18px;
+    color: aliceblue;
+}
+
+/*narrower grey card | container*/
+.container{
+    line-height: 35px;
+    color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:250px;
+    margin-left: 460px;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+/*broader grey card | container*/
+.businessContainer{
+    line-height: 35px;
+    color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:300px;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+
+
+/*-------------------------------------------- NAVIGATION BAR -------------------------------------------*/
+/*bg color for top navigation */
+.topnav {
+    background-color: grey;
+    overflow: hidden;
+}
+/* Style links inside navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 17.43%;
+}    
+/* Change color of links on hover */
+.topnav a:hover {
+    background-color: rgb(82, 82, 82);
+}
+/* Add color to current|active link */
+.topnav a.active {
+    background-color: red;
+    color: white;
+}
+
+
+/*----------------------------------------- DROPDOWN | SEARCH ----------------------------------------*/
+/*sticky for dropdown bar*/
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    margin: auto 20px;
+    z-index: 1000;
+}
+.dropbtn {
+    cursor: pointer;
+    align-items: center;
+    background-position: 10px 12px; 
+    background-color: red;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 15px; 
+    padding: 10px 20px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; 
+    margin-left: -3px;
+    color: white;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgb(82, 82, 82)
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+#myInput {
+    align-items: center;
+    background-image: url('images/search\ icon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 50%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+}
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+#myUL li a:hover:not(.header) {
+    background-color: #eee; /* hover effect to all links, except headers */
+}
+/*search bar*/
+.search{
+    font-size: 15px;
+    color: aliceblue;
+    padding: 10px 20px;
+    background-position: 10px 12px; 
+    margin-left: 20px;
+    width: 30%;
+}
+
+
+/*------------------------------------------------- 1. FRONT PAGE ---------------------------------------------*/
+/*front page gif background*/
+.front {
+    background-image:url('images/bubbles.gif');
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*position of crab in front page*/
+.logo{
+    text-align: center;
+    margin-top: 15%;
+}
+/*App/website name on front page*/
+.title{
+    color:red;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0%;
+    line-height: 0%;
+    border-radius: 50%;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/*----------------------------------------- 2. LOGIN|SIGNUP PAGE ----------------------------------------*/
+/*login page alignment*/
+section.loginSignup{
+    text-align: center;
+}
+/*header on login | signup box*/
+#welcome{
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*color and position for login box*/
+form.login{
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+    color: aliceblue;
+    float: left;
+    text-align: center;
+    padding: 20px 40px;
+    height: 240px;
+    width:180px;
+    margin-left: 370px;
+}
+/*color and alignment for signup box*/
+div.signup{
+    background-image: linear-gradient(to bottom right, red, rgb(255, 153, 0));
+    float:left;
+    text-align: center;
+    padding: 20px 40px;
+    height: 240px;
+    width:180px;
+    line-height: 21px;
+}
+
+/*----------------------------------------- 3. FORGET PWD PAGE ----------------------------------------*/
+.forgetBtn:link {
+  color: aliceblue;
+  background-color: transparent;
+}
+.forgetBtn:visited {
+  color: aliceblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+.forgetBtn:hover {
+  color: aliceblue;
+  background-color: transparent;
+  font-weight: bolder;
+}
+
+
+/*--------------------------------------------- 3. ID PAGE --------------------------------------------*/
+/*identity page spacing and centering*/
+.identity{
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+/*red heading in identity page*/
+.guide{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+/*color and width of id button*/
+.identityBtn{
+    width: 250px;
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom right, red, rgb(255, 153, 0));
+    border: 1px solid transparent;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+/*id button darkens upon hovering*/
+.identityBtn:hover{
+    -webkit-filter: brightness(70%);
+}
+/*id button text*/
+.idText{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/*----------------------------------------- 5. BUSINESS STATUS | TOGGLE SWITCH ----------------------------------------*/
+/* toggle in label designing */
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 120px;
+    height : 52px;
+    background-color: red;
+    border-radius: 30px;
+    border: 2px solid rgb(163, 158, 158);
+    cursor: pointer;
+}
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(163, 158, 158);
+    top: 1px; 
+    left: 1px;
+    transition:  all 0.5s;
+}
+/* Toggle text */
+p.toggleText {
+    font-weight: bold;
+    color: aliceblue;
+}
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+    left : 58px; 
+}
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background-color: rgba(51, 196, 51, 0.849);
+}
+/* Checkbox vanished */
+.checkbox { 
+    display : none;
+    width:100px;
+}
+
+
+/*-------------------------------- 6. BUSINESS CROWD | SLIDER -----------------------------------*/
+.slider .main{
+    width: 50%;
+    margin: 10% auto;
+    position: relative;
+}
+.slider #slider{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    outline: none;
+    border-radius: 3px;
+}   
+.slider #slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;   
+}
+.slider #selector{  
+    height: 104px;
+    width: 48px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.slider .SelectBtn{
+    height: 48px;
+    width: 48px;
+    background-image: url(.....png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+}
+.slider #SelectValue{
+    width: 48px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    background: #ffd200;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: bold;            
+}
+.slider #SelectValue::after{
+    content: '';
+    border-top: 17px solid #ff0000;
+    border-left: 24px solid #000;
+    border-right: 24px solid #000;
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+}
+.slider #ProgressBar{
+    width: 50%;
+    height: 7px;
+    background: #ffd200;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*alignment for business crowd*/
+.businessHome{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+
+/*----------------------------------------- 7. UPLOAD PAGE ----------------------------------------*/
+/*grey bg box for upload*/
+.upload{
+    text-align: center;
+    border: 1px dashed grey;
+    background-color: rgba(128, 128, 128, 0.473);
+    border-radius: 10px;
+    color:aliceblue;
+    margin: auto 150px;
+    padding: 20px;
+}
+/*circular upload button*/
+.uploadBtn{
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.733), red);
+    height:100px;
+    width: 100px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;  
+    margin: auto;
+    line-height: 23px;
+}
+/*circular button darkens upon hovering*/
+.uploadBtn:hover{
+    -webkit-filter: brightness(70%);
+}
+
+
+/*----------------------------------------- 8. PROFILE PAGE ---------------------------------------*/
+/*align input boxes for profile*/
+td{
+    text-align: left;
+    color:aliceblue;
+    padding-right: 5px;
+}
+.profilePic{
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.editBtn{
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 85px;
+}
+.editBtn:hover{
+    background-color: red;
+}
+.editPhoto{
+    cursor: pointer;
+}
+
+
+/*----------------------------------------- 8. BUSINESS PROFILE PAGE | 5.1 REST SAMPLE---------------------------------------*/
+.profileTable{
+    margin:auto;
+    color: aliceblue;
+    text-align: center;
+}
+/*grey cards | containers for business profile*/
+.profileContainer{
+    line-height: 50px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:230px;
+    margin: 10px;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+.profileContainer1{
+    line-height: 40px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:230px;
+    margin: collapse;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+.profileContainer2{
+    line-height: 55px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:230px;
+    margin: collapse;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+#profilePic{
+    height:200px;
+    width:220px;
+}
+#open{
+    color:rgb(40, 207, 40);
+    font-weight: 900;
+    font-size: 18px;
+}
+#closed{
+    color:red;
+    font-weight: 900;
+    font-size: 18px;
+}
+#full{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+#heavy{
+    color: red;
+    font-weight: 600;
+    font-size: 16px;
+}
+#moderate{
+    color:orange;
+    font-weight: 600;
+    font-size: 16px;
+}
+#light{
+    color:greenyellow;
+    font-weight: 600;
+    font-size: 16px;
+}
+/*safety icons large version*/
+.iconLarge{
+    background-color: rgb(255, 196, 0);
+    height:50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+/*service icons*/
+.service{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 3px;
+}
+.serviceIcon{
+    background-color: rgb(0, 225, 255);
+    height:50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+/*------------------------------------------- 9. EDIT BUSINESS PROFILE----------------------------------------------*/
+.editTable{
+    margin:auto;
+    color: aliceblue;
+    text-align: center;
+}
+/*grey cards | containers for business edit*/
+.editContainer1{
+    line-height: 30px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:260px;
+    margin: 10px;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+.editContainer2{
+    line-height: 33px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:260px;
+    margin: 10px;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+.editContainer3{
+    line-height: 33px;
+    color: aliceblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 40px;
+    display: block;
+    width:630px;
+    margin: 10px;
+    background-image: linear-gradient(to bottom right, rgba(128, 128, 128, 0.473), rgba(128, 128, 128, 0.822));
+}
+
+
+/*------------------------------------------- 5. SHOPS | HOME PAGE ----------------------------------------------*/
+/*safety measures icons*/
+.safety{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin: 3px;
+}
+.icon{
+    background-color: rgb(255, 196, 0);
+    height:30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+/*centers shop images*/
+.shopTd{
+    text-align: center;
+}
+#shopContainer {
+    position: relative;
+}
+#shopImg{
+    height:200px;
+    width:220px;
+    border: 1px solid gray;
+}
+#shopDes{
+    text-align: center;
+}
+
+/*----------------------------------------- 6. CATEGORIES | SEARCH PAGE ----------------------------------------*/
+/*centers category images*/
+.catTd{
+    text-align: center;
+}
+#catContainer {
+    position: relative;
+}
+/*fix size of each img*/
+#catImg{
+    height:170px;
+    width:306px;
+}
+
+/*asian delights*/
+.asiantitle {
+    position:absolute;
+    top:35%;
+    left:25%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.asianImg{
+    -webkit-filter: brightness(55%);
+    cursor: pointer;
+    border: 1px solid white;
+}
+.asianImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*bakery and confectionary*/
+.bakerytitle {
+    position:absolute;
+    top:25%;
+    left:23%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.bakeryImg{
+    -webkit-filter: brightness(55%);
+    cursor: pointer;
+    border: 1px solid white;
+}
+.bakeryImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*beverages*/
+.bevtitle {
+    position:absolute;
+    top:35%;
+    left:35%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.bevImg{
+    -webkit-filter: brightness(55%);
+    cursor: pointer;
+    border: 1px solid white;
+}
+.bevImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*cafe and dessert bar*/
+.cafetitle {
+    position:absolute;
+    top:25%;
+    left:27%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.cafeImg{
+    -webkit-filter: brightness(55%);
+    cursor: pointer;
+    border: 1px solid white;
+}
+.cafeImg:hover{
+    -webkit-filter: brightness(30%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/*chinese cuisine*/
+.chinesetitle {
+    position:absolute;
+    top:35%;
+    left:25%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.chineseImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.chineseImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*fast food*/
+.fftitle {
+    position:absolute;
+    top:35%;
+    left:35%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.ffImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.ffImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*food kiosk and light bites*/
+.lbtitle {
+    position:absolute;
+    top:25%;
+    left:28%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.lbImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.lbImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*halal options*/
+.halaltitle {
+    position:absolute;
+    top:35%;
+    left:30%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.halalImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.halalImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*indian cuisine*/
+.indiantitle {
+    position:absolute;
+    top:35%;
+    left:27%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.indianImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.indianImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*italian cuisine*/
+.italiantitle {
+    position:absolute;
+    top:35%;
+    left:27%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.italianImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.italianImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*japanese cuisine*/
+.japtitle {
+    position:absolute;
+    top:35%;
+    left:23%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.japImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.japImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*korean cuisine*/
+.koreantitle {
+    position:absolute;
+    top:35%;
+    left:25%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.koreanImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.koreanImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*local delights*/
+.localtitle {
+    position:absolute;
+    top:35%;
+    left:27%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.localImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.localImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*sweets and delicatessen*/
+.delititle {
+    position:absolute;
+    top:25%;
+    left:28%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.deliImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.deliImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*Thai cuisine*/
+.thaititle {
+    position:absolute;
+    top:35%;
+    left:28%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.thaiImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.thaiImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*Vegetarian Options*/
+.vegtitle {
+    position:absolute;
+    top:35%;
+    left:20%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.vegImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.vegImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*Vietnamese cusine*/
+.viettitle {
+    position:absolute;
+    top:35%;
+    left:18%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.vietImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.vietImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}
+
+/*western cusine*/
+.westtitle {
+    position:absolute;
+    top:35%;
+    left:22%;
+    font-size: 25px;
+    color:aliceblue;
+    display:block;
+    cursor: pointer;
+}
+.westImg{
+    -webkit-filter: brightness(55%);
+    border: 1px solid white;
+    cursor: pointer;
+}
+.westImg:hover{
+    -webkit-filter: brightness(30%);
+    cursor: pointer;
+}

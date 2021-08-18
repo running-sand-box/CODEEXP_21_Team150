@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = 'stylesheet.css' rel = 'stylesheet'>
+        <title>Edit Profile</title>
+    </head>
+
+    <main style='text-align: center;'>
+        <header>
+            <div class=banner>
+                <img src='images/crab.png' style='margin-top: 20px; height:80px; width:130px;'>
+            </div>
+        </header><br>
+
+        <div class="topnav">
+            <a href="5. business status.html">STATUS</a>
+            <a href="6. business crowd.html">CROWD</a>
+            <a href="7. people counting.html">CAMERA</a>
+            <a class="active" href="8. business profile.html">PROFILE</a>
+            <a href="2. login.html">LOGOUT</a>
+        </div><br>
+
+        <table class='editTable'>
+            <tbody>
+                <tr>
+                    <td>
+                        <form class='editContainer1'>
+                            <label for="rest type">Business Type:</label>
+                            <select id="rest type"><br>
+                                <option value="Restaurant">Restaurant</option>
+                                <option value="Bakery">Bakery</option>
+                                <option value="Beverage">Beverage</option>
+                                <option value="Buffet">Buffet</option>
+                                <option value="Cafe">Cafe</option>
+                                <option value="Fast Food">Fast Food</option>
+                                <option value="Others">Others</option>
+                            </select><br>
+
+                            <label><strong>Business profile:</strong></label><br>
+                            <input type="text" value='Din Tai Fung'><br>
+                            <input type="password" value="Password" required><br>
+                            <input type="text" value='6739 0263'><br>
+                            <input type="text" value='Northpoint #02-67'><br><br>
+
+                            <label for="openinghours" name='weekday'>Opening Hours: </label>
+                            <input type="text" placeholder="00:00" id="openinghours" name='opening' size='4'>
+                            <label> to</label>
+                            <input type="text" placeholder="00:00" id="openinghours" name='closing' size='4'><br>
+
+                            <label for="rest type">Closed on:</label>
+                            <select id="rest type"><br>
+                                <option value="Monday">Monday</option>
+                                <option value="Tuesday">Tuesday</option>
+                                <option value="Wednesday">Wednesday</option>
+                                <option value="Thursday">Thursday</option>
+                                <option value="Friday">Friday</option>
+                                <option value="Saturday">Saturday</option>
+                                <option value="Sunday">Sunday</option>
+                            </select><br>
+                            <input type="text" placeholder="Shop capacity" id="capacity"><br>
+                        </form>
+                    </td>
+                    <td>
+                        <form class='editContainer2'>
+                            <label for="safety"><strong>What are your safety measures?</strong></label><br>
+                            <input type="checkbox" id="safety" value="Social-Distancing" checked>Social-Distancing<br>
+                            <input type="checkbox" id="safety" value="Frequent Disinfection" checked>Frequent Disinfection<br>
+                            <input type="checkbox" id="safety" value="Temperature Taking" checked>Temperature Taking<br>
+                            <input type="checkbox" id="safety" value="Mask" checked>Mask Required<br><br>
+
+                            <label for="service"><strong>Services offered:</strong></label><br>
+                            <input type="checkbox" id="service" value="Dine-In" checked>Dine-In
+                            <input type="checkbox" id="service" value="Pick-up" checked>Pick-up
+                            <input type="checkbox" id="service" value="Delivery" checked>Delivery<br><br>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <form class='editContainer3'>
+                            <label for="cuisine" style='font-size: 18px;'><strong>Cuisine served:</strong></label><br>
+                            <input type="checkbox" id="cuisine" value="asian" checked>Asian Delights
+                            <input type="checkbox" id="cuisine" value="bakery">Bakery & Confectionary
+                            <input type="checkbox" id="cuisine" value="beverages">Beverages
+                            <input type="checkbox" id="cuisine" value="cafe">Cafe & Dessert Bar<br>
+                            <input type="checkbox" id="cuisine" value="chinese" checked>Chinese Cuisine
+                            <input type="checkbox" id="cuisine" value="fast food">Fast Food
+                            <input type="checkbox" id="cuisine" value="light bites">Food Kiosk & Light Bites
+                            <input type="checkbox" id="cuisine" value="halal">Halal Options<br>
+                            <input type="checkbox" id="cuisine" value="indian">Indian Cuisine
+                            <input type="checkbox" id="cuisine" value="italian">Italian Cuisine
+                            <input type="checkbox" id="cuisine" value="japanese">Japanese Cuisine
+                            <input type="checkbox" id="cuisine" value="korean">Korean Cuisine<br>
+                            <input type="checkbox" id="cuisine" value="local">Local Delights
+                            <input type="checkbox" id="cuisine" value="sweets">Sweets & Delicatessen
+                            <input type="checkbox" id="cuisine" value="thai">Thai Cuisine
+                            <input type="checkbox" id="cuisine" value="vegetarian">Vegetarian Options<br>
+                            <input type="checkbox" id="cuisine" value="vietnamese">Vietnamese Cuisine
+                            <input type="checkbox" id="cuisine" value="western">Western Cuisine<br>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+        <a href='8. business profile.html' class=editBtn style='padding: 10px 310px;'>
+            Save changes
+        </a>
+    </main>
+</html>

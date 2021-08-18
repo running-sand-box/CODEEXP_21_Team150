@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = 'stylesheet.css' rel = 'stylesheet'>
+        <title>Guest Setup</title>
+    </head>
+
+    <main>
+        <header>
+            <div class=banner>
+                <img src='images/crab.png' style='margin-top: 20px; height:80px; width:130px;'>
+            </div>
+        </header>
+
+        <nav class=return>
+            <a href = '3. identity.html'>
+                <img src='images/red-arrow.png' width="10%" height="10%">
+            </a>
+        </nav>
+        <br><br><br><br><br>
+
+        <form class=container>
+            <p class=instructions>Please fill in the details</p>
+            <input type="text" placeholder="Email" name="email" required onchange="{setEmail}"><br>
+            <input type="text" placeholder="Create username" name="user" required><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+            <input type="password" placeholder="Re-enter Password" name="psw-repeat" required><br><br>
+        
+            <a href='5. fail home.html' class=button>Let's Makan!</a><br>
+            <input type = 'checkbox' checked = 'checked' class='rmbBtn'>Remember me
+          </form>
+    </main>
+</html>

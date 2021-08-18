@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = 'stylesheet.css' rel = 'stylesheet'>
+        <title>Business Setup 2</title>
+    </head>
+
+    <main>
+        <header>
+            <div class=banner>
+                <img src='images/crab.png' style='margin-top: 20px; height:80px; width:130px;'>
+            </div>
+        </header>
+
+        <nav class=return>
+            <a href = '4. business setup 1.html'>
+                <img src='images/red-arrow.png' width="10%" height="10%">
+            </a>
+        </nav>
+        <br><br><br><br><br>
+
+        <form class=businessContainer>
+            <label for="openinghours" name='weekday'>Opening Hours: </label>
+            <input type="text" placeholder="00:00" id="openinghours" name='opening' size='4'>
+            <label> to</label>
+            <input type="text" placeholder="00:00" id="openinghours" name='closing' size='4'><br>
+
+            <label for="rest type">Closed on:</label>
+            <select id="rest type"><br>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select><br>
+
+            <input type="text" placeholder="Shop capacity" id="capacity"><br><br>
+
+            <label for="safety"><strong>What are your safety measures?</strong></label><br>
+            <input type="checkbox" id="safety" value="Social-Distancing">Social-Distancing
+            <input type="checkbox" id="safety" value="Frequent Disinfection">Frequent Disinfection
+            <input type="checkbox" id="safety" value="Temperature Taking">Temperature Taking
+            <input type="checkbox" id="safety" value="Mask">Mask Required<br><br>
+
+            <label for="service"><strong>Services offered:</strong></label><br>
+            <input type="checkbox" id="service" value="Dine-In">Dine-In
+            <input type="checkbox" id="service" value="Pick-up">Pick-up
+            <input type="checkbox" id="service" value="Delivery">Delivery<br><br>
+
+            <a href='4. business setup 3.html' class=button>Next</a>
+          </form>
+    </main>
+</html>
