@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href = 'stylesheet.css' rel = 'stylesheet'>
+        <title>Crowd</title>
+    </head>
+
+    <main>
+        <header>
+            <div class=banner>
+                <img src='images/crab.png' style='margin-top: 20px; height:80px; width:130px;'>
+            </div>
+        </header><br>
+
+        <div class="topnav">
+            <a href="5. business status.html">STATUS</a>
+            <a class="active" href="6. business crowd.html">CROWD</a>
+            <a href="7. people counting.html">CAMERA</a>
+            <a href="8. business profile.html">PROFILE</a>
+            <a href="2. login.html">LOGOUT</a>
+        </div><br>
+
+        <form class=businessHome>
+            <br>
+            <label for="crowd" class=guide style='color: aliceblue;'>Crowd Level:</label>
+
+            <body class='slider'>
+                <div class="main">
+                    <input type="range" min="0" max="100" value="50" id="slider">
+                    <div id="selector">
+                        <div class="SelectBtn"></div>
+                        <div id="SelectValue"></div>
+                    </div>
+                    <div id="ProgressBar"></div>
+                </div>
+
+                <script>
+                    var slider = document.getElementById("slider");
+                    var selector = document.getElementById("selector");
+                    var SelectValue = document.getElementById("SelectValue");
+                    var ProgressBar = document.getElementById("ProgressBar");
+            
+                    SelectValue.innerHTML = slider.value;
+            
+                    slider.oninput = function(){
+                         SelectValue.innerHTML = this.value;
+                        selector.style.left = this.value + "%";
+                        ProgressBar.style.width = this.value + "%";
+                    }
+                </script>
+            </body>
+        </form>
+    </main>
+</html>
